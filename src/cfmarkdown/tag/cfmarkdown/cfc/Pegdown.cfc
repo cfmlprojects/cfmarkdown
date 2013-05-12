@@ -73,7 +73,7 @@ component {
 	        }
 
         	content = rereplace(content,"([\S]+)@([^\.]+)","\1#chr(29)#\2","all")
-	        var html = pegDownProcessor.init(javacast("int",enabled))
+	        var html = pegDownProcessor.init(javacast("int",enabled),javacast("long",3000))
 	            .markdownToHtml(content,CustomLinkRenderer.init());
         	html = rereplace(html,"([\S]+)#chr(29)#([^\.]+)","\1@\2","all");
 
