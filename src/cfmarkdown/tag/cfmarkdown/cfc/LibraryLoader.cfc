@@ -100,7 +100,7 @@
 					loadpaths = getPaths(listGetAt(paths,x),loadpaths);
 				}
 				//server[key] = createObject("component", "javaloader.JavaLoader").init(loadPaths=loadPaths,loadColdFusionClassPath=false,sourceDirectories=[getDirectoryFromPath(getMetaData(this).path)&"java/"]);
-				server[key] = createObject("component", "javaloader.JavaLoader").init(loadPaths=loadPaths,loadColdFusionClassPath=false,sourceDirectories=[getDirectoryFromPath(getMetaData(this).path)&"java/"]);
+				server[key] = createObject("component", "javaloader.JavaLoader").init(loadPaths=loadPaths,loadColdFusionClassPath=false);
 				instance.initialized = true;
 			}
 			return this;
